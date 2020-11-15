@@ -15,5 +15,48 @@
 	<div class="container-fluid">
 		<p>This is a fluid container</p>
 	</div>
-</body>
+
+	<div class="container-sm">100% wide until small bkpt</div>
+	<div class="container-md">100% wide until medium bkpt</div>
+	<div class="container-lg">100% wide until large bkpt</div>
+	<div class="container-xl">100% wide until ex large bkpt</div>
+
+	<div class="alert alert-primary fade show" role="alert">
+		A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+	</div>
+	<div class="alert alert-secondary fade show" role="alert">
+		A simple secondary alert—check it out! <span class="badge badge-primary">Primary</span>
+	</div>
+	<div class="alert alert-success fade show" role="alert">
+		A simple success alert—check it out! <span class="badge badge-success">Success</span>
+	</div>
+	<div class="alert alert-danger fade show" role="alert">
+		A simple danger alert—check it out! <span class="badge badge-danger">Danger</span>
+	</div>
+	<div class="alert alert-warning fade show" role="alert">
+		A simple warning alert—check it out! <span class="badge badge-warning">Warning</span>
+	</div>
+	<div class="alert alert-info fade show" role="alert">
+		A simple info alert—check it out! <span class="badge badge-info">Info</span>
+	</div>
+	<div class="alert alert-light fade show" role="alert">
+		A simple light alert—check it out! <span class="badge badge-light">Light</span>
+	</div>
+	<div class="alert alert-dark fade show" role="alert">
+		A simple dark alert—check it out! <span class="badge badge-dark">Dark</span>
+	</div>
+
+	<div class="alert" role="alert">
+		A simple primary alert—check it out!
+	</div>
+	<div class="alert-primary" role="alert">
+		A simple primary alert—check it out!
+	</div>
+	<button onclick="$('.alert').alert('close')">Close</button>
+	<script>
+		$('.alert').on('closed.bs.alert', function() {
+			alert("closed")
+		});
+	</script>
+	</body>
 </html>
